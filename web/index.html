@@ -1,0 +1,40 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="puzzle.css">
+    <script type="text/javascript" src="puzzle.js"></script>
+
+</head>
+<body>
+<div id = "container">
+    <div id = "game">
+        <div id = "d1" onclick = "move(1)">1</div>
+        <div id = "d2" onclick = "move(2)">2</div>
+        <div id = "d3" onclick = "move(3)">3</div>
+        <div id = "d4" onclick = "move(4)">4</div>
+        <div id = "d5" onclick = "move(5)">5</div>
+        <div id = "d6" onclick = "move(6)">6</div>
+        <div id = "d7" onclick = "move(7)">7</div>
+        <div id = "d8" onclick = "move(8)">8</div>
+    </div>
+    <!--游戏控制区-->
+    <div id = "control">
+        <p>
+            <rowspan id = "timeText">总用时</rowspan>
+            <rowspan id = "timer"></rowspan>
+        </p>
+        <p>
+            <rowspan id="start" onclick="start()">开始</rowspan><br/>
+            <rowspan id="reset" onclick="reset()">重来</rowspan><br/>
+            <rowspan id ="timeText1"><br/>拼好就能拿到口令呢<br/>(有极小概率出现无解情况请重来)</rowspan><br/>
+            <rowspan id="www">据说有人用第二种方法2秒钟拿到了口令</rowspan>
+        </p>
+    </div>
+</div>
+</body>
+</html>
+
+
